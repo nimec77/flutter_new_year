@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 const kUltimateGray = Color(0xff939597);
 const kIlluminating = Color(0xfff5df4d);
+// const kPrimaryColor = Color(0xff2e218d);
+const kPrimaryColor = Color(0xff0050A0);
 const kTextShadow = Shadow(
   offset: Offset(2, 2),
   blurRadius: 2,
@@ -13,9 +15,10 @@ final kNewYearTheme = ThemeData.light().copyWith(
   scaffoldBackgroundColor: kUltimateGray,
   textTheme: ThemeData.light().textTheme.copyWith(
         headline4: const TextStyle(
-          fontFamily: 'Lobster',
+          fontFamily: 'Roboto',
           color: kIlluminating,
           height: 1.4,
+          fontWeight: FontWeight.bold,
           shadows: [
             kTextShadow,
           ],
@@ -31,7 +34,10 @@ final kNewYearTheme = ThemeData.light().copyWith(
 const kCongratulationsText = [
   'Уважаемые коллеги!',
   'С наступающим Новым годом!',
-  'Отдел 715 желает вам в Новом году крепкого здоровья,',
-  'Профессиональных достижений, творческих успехов,',
-  'Безграничного счастья и общения без ограничений!',
+  'Отдел 715 желает вам в Новом году ',
+  'Крепкого здоровья,',
+  'Профессиональных достижений,',
+  'Творческих успехов,',
+  'Безграничного счастья',
+  'И общения без ограничений!',
 ];

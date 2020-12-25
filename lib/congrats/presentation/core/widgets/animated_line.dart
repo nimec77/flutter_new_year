@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedLine extends StatelessWidget {
@@ -15,17 +14,22 @@ class AnimatedLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TyperAnimatedTextKit(
-      text: [
-        text,
-      ],
-      textStyle: Theme.of(context).textTheme.headline4.copyWith(color: Colors.red.shade400),
+    // return TyperAnimatedTextKit(
+    //   text: [
+    //     text,
+    //   ],
+    //   textStyle: Theme.of(context).textTheme.headline4.copyWith(color: const Color(0xff8d2721)),
+    //   textAlign: TextAlign.end,
+    //   isRepeatingAnimation: false,
+    //   repeatForever: false,
+    //   onFinished: () {
+    //     debugPrint('Finished: $lineIndex');
+    //   },
+    // );
+    return Text(
+      text,
+      style: Theme.of(context).textTheme.headline4,
       textAlign: TextAlign.center,
-      isRepeatingAnimation: false,
-      repeatForever: false,
-      onFinished: () {
-        debugPrint('Finished: $lineIndex');
-      },
     );
   }
 }

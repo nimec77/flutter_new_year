@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_new_year/congrats/presentation/core/widgets/dont_grats.dart';
 
 import '../constants.dart';
 import 'widgets/animated_line.dart';
@@ -9,14 +10,25 @@ class AppWidget extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-            image: DecorationImage(
-          image: AssetImage('assets/5.jpg'),
-          fit: BoxFit.cover,
-        )),
-        child: Column(
+          image: DecorationImage(
+            image: AssetImage('assets/new_year_2021.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: const [
+                  DontCongrats(),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 30),
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemCount: kCongratulationsText.length,
@@ -26,38 +38,6 @@ class AppWidget extends StatelessWidget {
                   },
                 ),
               ),
-            ),
-            Row(
-              children: [
-                Expanded(
-                  child: CheckboxListTile(
-                    activeColor: Colors.red.shade600,
-                    controlAffinity: ListTileControlAffinity.leading,
-                    title: const Text(
-                      'Больше не поздравлять',
-                      style: TextStyle(
-                        color: Colors.white,
-                        shadows: [
-                          kTextShadow,
-                        ],
-                      ),
-                    ),
-                    value: true,
-                    onChanged: (_) {},
-                  ),
-                ),
-                const SizedBox(width: 10),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.red.shade600,
-                  ),
-                  child: const Text(
-                    'Спасибо!',
-                  ),
-                ),
-                const SizedBox(width: 10),
-              ],
             ),
           ],
         ),

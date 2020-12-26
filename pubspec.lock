@@ -79,7 +79,7 @@ packages:
     source: hosted
     version: "1.5.1"
   build_runner:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: build_runner
       url: "https://pub.dartlang.org"
@@ -216,13 +216,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.1.1"
+  flutter_hooks:
+    dependency: "direct main"
+    description:
+      name: flutter_hooks
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.15.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
   freezed:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: freezed
       url: "https://pub.dartlang.org"
@@ -292,7 +299,7 @@ packages:
     source: hosted
     version: "3.1.1"
   lint:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: lint
       url: "https://pub.dartlang.org"
@@ -531,4 +538,4 @@ packages:
     version: "2.2.1"
 sdks:
   dart: ">=2.12.0-0.0 <3.0.0"
-  flutter: ">=1.22.0"
+  flutter: ">=1.22.0 <2.0.0"

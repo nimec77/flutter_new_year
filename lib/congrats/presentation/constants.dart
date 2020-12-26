@@ -41,3 +41,6 @@ const kCongratulationsText = [
   'Безграничного счастья',
   'И общения без ограничений!',
 ];
+const kCongratsImage = 'assets/new_year_2021.jpg';
+const kImageAnimationDuration = Duration(milliseconds: 1500);
+const kDontGratsAnimationDuration = Duration(milliseconds: 500);

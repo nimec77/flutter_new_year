@@ -12,7 +12,7 @@ const kTextShadow = Shadow(
 final kNewYearTheme = ThemeData.light().copyWith(
   primaryColor: kUltimateGray,
   accentColor: kIlluminating,
-  scaffoldBackgroundColor: kUltimateGray,
+  scaffoldBackgroundColor: kPrimaryColor,
   textTheme: ThemeData.light().textTheme.copyWith(
         headline4: const TextStyle(
           fontFamily: 'Roboto',
@@ -44,3 +44,15 @@ const kCongratulationsText = [
 const kCongratsImage = 'assets/new_year_2021.jpg';
 const kImageAnimationDuration = Duration(milliseconds: 1500);
 const kDontGratsAnimationDuration = Duration(milliseconds: 500);
+const kSprites = 'assets/weathersprites.png';
+const kSpriteJson = 'assets/weathersprites.json';
+const kFlake0 = 'flake-0.png';
+const kFlake1 = 'flake-1.png';
+const kFlake2 = 'flake-2.png';
+const kFlake3 = 'flake-3.png';
+const kFlake4 = 'flake-4.png';
+const kFlake5 = 'flake-5.png';
+const kFlake6 = 'flake-6.png';
+const kFlake7 = 'flake-7.png';
+const kFlake8 = 'flake-8.png';
+const kSound = 'assets/sound.mp3';

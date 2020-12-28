@@ -18,7 +18,7 @@ Future<void> main() async {
   }
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = SimpleBlocObserver();
-  // enterFullScreen();
+  enterFullScreen();
   runApp(MyApp(lockFilePath: lockFilePath));
 }
 
@@ -39,7 +39,7 @@ Future<void> enterFullScreen() async {
   final screen = windowInfo.screen;
   if (screen != null) {
     window_size.setWindowTitle('Поздравляем С Новым Годом!');
-    window_size.setWindowFrame(Rect.fromLTWH(0, 0, screen.frame.width, screen.frame.height));
+    // window_size.setWindowFrame(Rect.fromLTWH(0, 0, screen.frame.width, screen.frame.height));
   }
 }
 

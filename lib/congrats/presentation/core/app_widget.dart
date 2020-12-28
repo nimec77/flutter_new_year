@@ -18,6 +18,7 @@ class AppWidget extends StatelessWidget {
             builder: (context, state) {
               return state.maybeMap(
                 showCongrats: (_) => const CongratsWidget(),
+                showLineSuccess: (_) => const CongratsWidget(),
                 orElse: () => Container(),
               );
             },

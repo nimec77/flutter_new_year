@@ -13,7 +13,6 @@ class CongratsCubit extends Cubit<CongratsState> {
   }
 
   void showLineCompleted(int index) {
-    print('Show line completed:$index');
     emit(CongratsState.showLineSuccess(index));
   }
 }
